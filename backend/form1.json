@@ -1,0 +1,30 @@
+{
+  "p1":{
+    "1":"Hey there, I'm here to take feedback for Mr. Wilkinson. Shall I begin?",
+    "2":"Hi, I'm here to take feedback for Mr. Wilkinson. Shall I begin? "
+  },
+  "n1":{
+    "1":"No Problem, I will reach you later... Bye"
+  },
+  "p2":{
+    "1":"Does your faculty complete the course in due time?"
+  },
+  "n2":{
+    "1":"what do you think the reason might be?"
+  },
+  "p3":{
+    "1":"Do you feel the faculty is creative and has unique way of teaching?"
+  },
+  "p4":{
+    "1":"Does the faculty help in solving any of your personal problems?"
+  },
+  "p5":{
+    "1":"Does the faculty have in depth knowledge about their subject?"
+  },
+  "p6":{
+    "1":"Which mode of teaching would you prefer for this faculty for this pert subject? blackboard or projector?"
+  },
+  "p7":{
+    "1":"Thank you for your time. It was nice talking with you."
+  }
+}
