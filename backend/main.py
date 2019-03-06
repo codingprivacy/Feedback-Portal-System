@@ -9,9 +9,9 @@ import random
 action='p'
 q=1
 flag=1
-before_flag=1      #flag that is used last time
+before_flag=1                                 # flag that is used last time
 
-def emotions(text):   #finding the emotion of the text
+def emotions(text):                           #  finding the emotion of the text
     if(text=="yes" or text=='Yes'):
         flag=1
         #print(flag)

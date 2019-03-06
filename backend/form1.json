@@ -4,10 +4,13 @@
     "2":"Hi, I'm here to take feedback for Mr. Wilkinson. Shall I begin? "
   },
   "n1":{
-    "1":"No Problem, I will reach you later... Bye"
+    "1":"No Problem, I will reach you later... Bye",
+    "2":"Never mind, I will ping you later...Bye",
+    "3":"Okay, I will see you later...Bye"
   },
   "p2":{
-    "1":"Does your faculty complete the course in due time?"
+    "1":"Does your faculty complete the course in due time?",
+    "2":"Do you think that the course taught by this faculty is completed in due time?"
   },
   "n2":{
     "1":"what do you think the reason might be?"
