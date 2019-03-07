@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css"
+    rel="stylesheet" type="text/css">
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+
+
+</head>
+
+
+<body>
+<div>
+    <div style="width: 20%; display: inline-block;float: left; margin-bottom: 4cm; margin-left: 11cm">
+
+        {{ div | safe }}
+        {{ script | safe }}
+
+    </div>
+
+     <div style="width: 20%; display: inline-block;float: left; clear: left; margin-left: 11cm">
+
+        {{ div2 | safe }}
+        {{ script2 | safe }}
+
+
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
