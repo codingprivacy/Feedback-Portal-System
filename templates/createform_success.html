@@ -1,0 +1,42 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="animated fadeIn" style="min-height: 100%">
+    <!--Row_1 Start-->
+    <div class="row">
+        <!--Widget Start-->
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-3">
+                            <i class="pe-7s-browser"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="text-left dib">
+                                <div class="stat-text"><span class="count">{{ FORMS_LIST_count }}</span></div>
+                                <div class="stat-heading">Forms Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--Widget End-->    
+
+    </div><!--Row_1 End-->
+    
+    
+    <!--Row_2 Start-->
+    <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+            <div class="alert alert-success mx-auto" role="alert" style="max-width: 33.33%">
+                {{ err }}
+            </div>
+        </div>
+        <div class="col-lg-12 text-center">
+            <button type="button" class="btn btn-outline-primary btn-lg" onclick="GoBackWithRefresh()">Go Back</button>
+        </div>
+    </div><!--Row_2 End-->
+</div>
+{% endblock %}

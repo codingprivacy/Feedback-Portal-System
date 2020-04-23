@@ -1,0 +1,138 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="animated fadeIn">
+    <!--Row_1 Start-->
+    <div class="row">
+        <!--Widget Start-->
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="stat-widget-five">
+                        <div class="stat-icon dib flat-color-3">
+                            <i class="pe-7s-browser"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="text-left dib">
+                                <div class="stat-text"><span class="count">{{ FORMS_LIST_count }}</span></div>
+                                <div class="stat-heading">Forms Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--Widget End-->    
+
+    </div><!--Row_1 End-->
+    
+    
+    <!--Row_2 Start-->
+    <div class="row">
+    <!--Create Form Start Start-->
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Create Form</strong>
+            </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4 class="text-center">Fill the form below with desired questions to make a new FPSU ChatBot Conversation.</h4>
+                        </div>
+                        <hr>
+                        <form action="{{ url_for('admin_createform_success') }}" method="POST" novalidate="novalidate">
+                           
+                            <div class="form-group">
+                                <label class="control-label mb-1"><strong>Form Name</strong></label>
+                                <input name="form_name" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Form name should not have spaces.">
+                            </div>
+                            
+                            <hr>
+                            
+                            <div class="card-title">
+                                <h4 class="text-center">Questions that FPSU ChatBot will learn to ask.</h4>
+                            </div>
+                            
+                            <!--Questions Start-->
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #1</label>
+                                <input name="new_quest_1" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #2</label>
+                                <input name="new_quest_2" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #3</label>
+                                <input name="new_quest_3" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #4</label>
+                                <input name="new_quest_4" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #5</label>
+                                <input name="new_quest_5" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #6</label>
+                                <input name="new_quest_6" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #7</label>
+                                <input name="new_quest_7" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #8</label>
+                                <input name="new_quest_8" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #9</label>
+                                <input name="new_quest_9" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Question #10</label>
+                                <input name="new_quest_10" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                            </div>
+                            
+                            
+                            <!--Questions End-->
+                            <hr>
+                            
+                            <button type="submit" class="btn btn-lg btn-info btn-block">
+                                <span>Save</span>
+                            </button>
+                       
+                        </form>
+                    </div>
+
+            </div>
+        </div><!--Create Form End-->
+        
+        <!--Saved Form Start-->
+        <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header"><strong>Saved Forms</strong></div>
+            <div class="card-body">
+                    <h4>List of forms in the system</h4>
+                    <ul style="padding: inherit">
+                        {% for form in FORMS_LIST %}
+                            <li>{{ form }}</li>
+                        {% endfor %}
+                    </ul>
+            </div>
+        </div>
+        </div><!--Saved Form End-->
+    </div><!--Row_2 End-->
+</div>
+{% endblock %}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="{{ url_for("static",filename="main.css") }}">
+</head>
+<body>
+<div class="container-fluid" style="padding: 0px;"> 
+ <div class="row" id="only_mobile">
+  <div class="col">
+    <h5 id="only_mobile_text"><b>FEEDBACK PORTAL SYSTEM</b></h5>
+   
+  </div>
+ </div>
+ </div>
+
+<div class="container-fluid"> 
+ <div class="row" id="row">
+  <div class="col-lg-4" id="left_bar">
+    <div id="title">
+      <h1 id="h1_title"><b>FEEDBACK PORTAL SYSTEM</b></h1>
+    </div>
+    <div id="faculty_info">
+      
+    </div>
+    <footer>
+        <h2 id="h2_title"><b><a id="cp" href="https://codingprivacy.github.io">CodingPrivacy</a></b></h2>
+        <h6 id="copyrights">&copy Copyrights Reserved</h6>
+    </footer>
+  </div>
+  
+  
+  <div class="col" id="right_bar">
+      
+      <div id="chatbox">
+        <ul id="chatlist">
+          
+            <!--
+            <div id="block_left">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend" id="image_left_block">
+                    <img src="images/sara.png" class="img-responsive" id="block_image_left">
+                  </div>
+                  <div id="list_block_left" style="">
+                  <li style='margin-left:5px;margin-right:5px;display:table;border: solid 1px #2E86AB;color:#ffffff;border-bottom-left-radius: 25px; border-top-right-radius:5px;padding:15px;margin-top: 10px;margin-bottom:10px;font-size: 20px;'>Hi, I'm here to take feedback for   Warish Patel. Shall I begin?Do you feel the faculty is creative and has unique way of teaching?<span class="cursor">|</span></li>
+                </div>
+                </div>
+              </div>
+             
+            <div id='block_right' style="float: right;">
+              <div class='input-group mb-3' id="block_in_block_right">
+                  <li style='margin-right:4px;display:table;border: solid 2px #205d77;background: rgba(234, 242, 246);color:#205d77;border-bottom-right-radius:25px; border-top-left-radius:5px;padding:15px;margin-top: 10px;margin-bottom:10px;font-size: 20px;max-width: 85%;'>hi</li>
+                  <div class="input-group-append" style="margin-right: 0px; padding: 0px;">
+                    <img src="images/logo.png" class='img-responsive' id='block_image_right'>
+                  </div>
+              </div>
+           
+          <div id='block_right' style="float: right;">
+              <div class='input-group mb-3' id="block_in_block_right">
+                  <li style='margin-right:4px;display:table;border: solid 2px #205d77;background: rgba(234, 242, 246);color:#205d77;border-bottom-right-radius:25px; border-top-left-radius:5px;padding:15px;margin-top: 10px;margin-bottom:10px;font-size: 20px;max-width: 85%;'>poppel I don't think it matters, but my first attempt to fix your fiddle was to use setAttribute. It was after that failed that I noticed the line-breaks in the base64 encoding. (Since I was rushing to get an answer submitted, I did not try it with src= after fixing the line-breaks.</li>
+                  <div class="input-group-append" style="margin-right: 0px; padding: 0px;">
+                    <img src="images/logo.png" class='img-responsive' id='block_image_right'>
+                  </div>
+              </div>
+           !-->
+         
+        </ul>
+        <div class="spinner" id="spin">
+               <div class="bounce1"></div>
+               <div class="bounce2"></div>
+               <div class="bounce3"></div>
+          </div>
+      </div>  
+      
+		<div class="col" id="reply_div">
+          <div id="emoji">
+          <button class="btn btn-secondary" type="button" onclick="add_chat('Yes')" id="yes_btn" value="Yes">Yes</button>
+            <button class="btn btn-secondary" type="button" onclick="add_chat('No')" id="no_btn" value="No">No</button>
+            <button class="btn btn-secondary" type="button" onclick="add_chat('Okay')" id="okay_btn" value="okay">Okay</button>
+            
+          </div>
+          <div class="input-group mb-3" id="reply_div_in" style="padding-right: 0px;padding-left: 1px;">
+            <div class="input-group-prepend" id="button-addon3">
+              <img src="{{ url_for('static',filename='images/user.png') }}" class="img-responsive" id="reply_image">
+            </div>
+            <input type="text" class="form-control" placeholder="Enter text here"  aria-describedby="button-addon3" id="input">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="button" onclick="add_chat()" id="button-addon2">Send</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+  </div>
+</div>
+<script type="text/javascript" src="{{ url_for("static",filename="main.js") }}"></script>
+</body>
+</html>

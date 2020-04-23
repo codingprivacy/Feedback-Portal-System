@@ -1,0 +1,1 @@
+SELECT student.enrollment_number,student.student_class, subject.subject_abbr,faculty.first_name, faculty.last_name FROM student,faculty, subject WHERE faculty.subject_fpsu_code=subject.subject_fpsu_code AND student.student_class=faculty.class_alloted AND student.semester=faculty.semester_alloted ORDER BY student.student_class;

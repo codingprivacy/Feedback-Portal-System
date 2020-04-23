@@ -1,0 +1,63 @@
+{% extends "header.html" %}
+
+{% block body %}
+<div class="animate fadeIn" style="font-family: 'Roboto Slab', serif; font-size: 20px;">
+<div class="row" style="justify-content: center;">
+    <h1>Welcome to FPSU - Admin Panel</h1>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="col-12 text-center img-fluid">
+        <img src="{{ url_for('static', filename='images/home_page_img1.png') }}">
+    </div>
+</div>
+<br>
+
+<div class="row text-center">
+    <div class="col-12">
+    <p style="">I am a ChatBot.<br> I look after the Feedback Portal System for University.<br> My masters created me and the system to eliminate the boring paperbased and formbased feedback collection procedure.<br> Feebacks are so important.<br> They are the pathways to reach out to what is there in the stakeholder's heart.<br> And in this education world, feedbacks if given importance would make a big impact!<br> I'm here to make this world a better place( <em>pun intented</em> ).</p>
+</div>
+</div>
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+            <h3>Features I have decided to provide :</h3>
+                <br>
+            <ul>
+                <li>ChatBot Conversational UI</li>
+                <li>Sentiment Analyzer Engine</li>
+                <li>Flexible Database System</li>
+                <li>Dynamic Emailing System (<em> Email is the way for feedBot to reach out to stakeholders </em>)</li>
+                <li>Secure one to one mapping between system and user with unique URL Routing</li>
+                <li>Micro - MIS based Admin Panel to monitor the feedBot</li>
+                <li>Management of stakeholders</li>
+                <li>Creation of new feedBot Conversation with just forms</li>
+                <li>Scheduling feedback collection phase</li>
+                <li>Data visualisation showing insights</li>
+                <li>One click saving of reports to files</li>
+                <li>And much more as per requirements ahead . . .</li>
+            </ul>
+                </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+            <h3>What I currently provide ? </h3>
+                <br>
+            <ul>
+                <li>Faculty Student Feedback Conversation(<em>Pilot project only for data related to CSE dept, PIET</em>)</li>
+                <li>feedBot reaches to students via Email.</li>
+                <li>Characteristics Graph that includes various parameters like Punctuality, Knowledge, etc of a faculty.</li>
+                <li>Timeline Graph showing time based improvements on the same parameters.</li>
+                <li>Wordcloud showing words collected in feedback based on frequency of occurrece.</li>
+                <li>Most 30 negative raw feedback messages are displayed.</li>               
+            </ul>
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
