@@ -2,7 +2,7 @@
   Overview
 </h2>
 <p>
-  This is a system which has been developed to operate in the current fast world we are living in. Feedbacks are necessary for improvement of any institution or organization. This system will be able to take periodic feedbacks from an educational institution using a chatbot in a human friendl way. There will be no predefined questions, the question generated will depend on the response of the user. Since the system will deal with lot of chats and emotions, sentiment analysis and natural language processing will come into the picture. Moreover, data analytics is needed to analyse and seggregate the data. Machine Learning algorithms will be needed in order to customize and prepare the chatbot.
+  This is a system which has been developed to operate in the current fast world we are living in. Feedbacks are necessary for improvement of any institution or organization. This system will be able to take periodic feedbacks from an educational institution using a chatbot in a human friendly way. There will be no predefined questions, the question generated will depend on the response of the user. Since the system will deal with lot of chats and emotions, sentiment analysis and natural language processing will come into the picture. Moreover, data analytics is needed to analyse and seggregate the data. Machine Learning algorithms will be needed in order to customize and prepare the chatbot.
 </p>
 
 <i><b>requirements.txt</b> contains all the required libraries for the backend developement.</i><br>
