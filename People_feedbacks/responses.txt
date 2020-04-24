@@ -1,0 +1,94 @@
+RESP_1 : 150303105011
+RESP_2 : Mostly they do, but sometimes they might not..
+RESP_3 :  NULL
+RESP_4 :  NULL
+RESP_5 :  NULL
+RESP_6 :  NULL
+RESP_7 :  NULL
+RESP_8 :  NULL
+RESP_9 :  NULL
+RESP_10 :  NULL
+
+
+RESP_1 : 150303105055
+RESP_2 : He does complete the course in time, but not in the pace we expect them to. Usually, the last chapters are not comprehensible at all.
+RESP_3 : I find him to have a very little knowledge on the subject he is teaching.
+RESP_4 : He responds to the questions well, yet he does not always provide the correct explanations/answers to the doubts.
+RESP_5 : There has always been a situation of chaos in the classroom. He can not manage the classroom at all.
+RESP_6 : He needs to work on that.
+RESP_7 : There is chaos all around. Students busy in their on work and life.
+RESP_8 : No, nothing that I can recall. I believe he should guide the students a bit more.
+RESP_9 : Well, he tries to conduct tests, not regular though. Students don't show up and that doesn't seem to bother him much.
+RESP_10 : He is fair while evaluating. I don't sense any partiality.
+
+
+RESP_1 : 150303105086
+RESP_2 : No, he doesnot. Because when he starts a topic he includes much more than just the course given by the college.
+RESP_3 : As I wrote in my previous answer he teaches more than the course. He has a vast knowledge about the subject.
+RESP_4 : Very well. If he doesnot know the answer to the asked question he researches and tells it the next day.
+RESP_5 : Ofcourse in a class chaos does happen at times but he handles it well.
+RESP_6 : Average communication skills.
+RESP_7 : Faculty's interest towards students interaction makes student take interest in his teaching.
+RESP_8 : Yes, he has always been there for students.
+RESP_9 : He knows students are already giving a lot of tests so he doesnot conduct tests but seminaars and presentations by students are conducted more often.
+RESP_10 : He is not partial for average or toppers but doesnot always treat well the students who donot attend his class regularly.
+
+
+RESP_1 : 150303105103
+RESP_2 : Yes
+RESP_3 : Not so good
+RESP_4 : Not very well
+RESP_5 : Yes
+RESP_6 : Good
+RESP_7 : He is good at maintaining the class
+RESP_8 : Yes
+RESP_9 : Yesss
+RESP_10 : No
+
+
+RESP_1 : 150303105111
+RESP_2 : Mostly yes , and if not than the reason is that the syllabus is too large and more theoretical than practical.
+RESP_3 : I'd say about 8/10 for most of the faculties. Some know it about average.
+RESP_4 : They do take interest in it and try their best to solve it.
+RESP_5 : Yep a lot of times. Mostly they handle it by scolding but there must be a better way.
+RESP_6 : About 70% have average or below average communication skills but the rest rest have really good communication skills.
+RESP_7 : It can be described as a quiet classroom most of the times but not sure about how many students actuallget what he says.
+RESP_8 : Yes mostly. And i feel each teacher should reach out personally or respond well when the student does the same.
+RESP_9 : There are not much tests but we do have quizzes once or twice in a semester by some teachers. The frequency can be increased.
+RESP_10 : Pretty fair i don't see any biased markings.
+
+
+RESP_1 : 150303105178
+RESP_2 : No because faculty is alloted some tasks other than teaching which affects the course completion
+RESP_3 : Good knowledge of subject
+RESP_4 : Faculty is always available any kind of doubts and if one asks the same doubt again the faculty tries to explain in different way
+RESP_5 : No
+RESP_6 : The faculty is able to interact with us very well .Good communication skills.
+RESP_7 : All students except a few are attentive during his lecture
+RESP_8 : Yes
+RESP_9 : Yes he conducts some fun quizes in interactive way rather than pen- paper based test. Also, arranges expert lectures for important topics
+RESP_10 : He has never done partiality while evaluation
+
+
+RESP_1 : 160303105185
+RESP_2 : No,they just focus on no. of lecture not on syllabus portion
+RESP_3 : New faculty doesn't know there subject well.
+RESP_4 : Some faculty doesn't not have enough knowledge of subject which alloted to them so they are not able to clear doubts
+RESP_5 : Some faculty cant handel the situation well.
+RESP_6 : They give us good mentoring session.
+RESP_7 : Classroom scence are worst during his teaching.
+RESP_8 : She helped student on more personal level and guided them for further studies.
+RESP_9 : No there is no such things like class test or something.
+RESP_10 : He/she  is fair while evaluating amswer sheets.
+
+
+RESP_1 : 160303105212
+RESP_2 : No. Lack of time.
+RESP_3 : Not sure.
+RESP_4 : Pretty good.
+RESP_5 : Yes there is chaos sometimes but that's just to have some fun so we don't feel bored in lectures
+RESP_6 : Not to good and not to bad as their English might not be proper but they still try to communicate and explain
+RESP_7 : I don't know this faculty
+RESP_8 : Nil
+RESP_9 : Nil
+RESP_10 : Nil

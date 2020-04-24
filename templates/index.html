@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Feedback Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico') }}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.css') }}">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css') }}">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animsition/css/animsition.min.css') }}">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.css') }}">
+
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="{{ url_for('resp') }}" method="POST">
+				<span class="contact100-form-title">
+					Feedback Form
+				</span>
+
+				<div class="wrap-input100 validate-input" >
+					<span class="label-input100">1. Does your faculty completes the course in due time?</span>
+                    <br>
+					<input class="" type="radio" name="ques_1_resp" value="1">Yes
+          <input class="" type="radio" name="ques_1_resp" value="0">No
+				</div>
+
+          <div class="wrap-input100 validate-input" >
+						<span class="label-input100">2. Do you feel the faculty is creative and has unique way of teaching?</span>
+              <br>
+					<input class="" type="radio" name="ques_2_resp" value="1">Yes
+          <input class="" type="radio" name="ques_2_resp" value="0">No
+				</div>
+
+          <div class="wrap-input100 validate-input" >
+					<span class="label-input100">3. Does the faculty help in solving any of your personal problems?</span>
+                    <br>
+					<input class="" type="radio" name="ques_3_resp" value="1">Yes
+                    <input class="" type="radio" name="ques_3_resp" value="0">No
+				</div>
+
+          <div class="wrap-input100 validate-input" >
+					<span class="label-input100">4. Does the faculty have in-depth knowledge about their subject?</span>
+          <br>
+					<input class="" type="radio" name="ques_4_resp" value="1">Yes
+          <input class="" type="radio" name="ques_4_resp" value="0">No
+				</div>
+
+                <div class="wrap-input100 validate-input" >
+					<span class="label-input100">5. Which mode of teaching would you prefer for this faculty for the subject?</span>
+                    <br>
+					<input class="" type="radio" name="ques_5_resp" value="1">Black board
+          <input class="" type="radio" name="ques_5_resp" value="0">Projector Aided
+				</div>
+
+				<div class="container-contact100-form-btn">
+	        <div class="wrap-contact100-form-btn">
+	        <div class="contact100-form-bgbtn"></div>
+	        <button class="contact100-form-btn">
+	            <span>Submit
+	            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+	            </span>
+	        </button>
+        </div>
+            </div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<!--script src="vendor/jquery/jquery-3.2.1.min.js"></script-->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+	<!--script src="vendor/animsition/js/animsition.min.js"></script-->
+	<script src="{{ url_for('static', filename='vendor/animsition/js/animsition.min.js') }}"></script>
+
+<!--===============================================================================================-->
+	<!--script src="vendor/bootstrap/js/popper.js"></script-->
+	<!--script src="vendor/bootstrap/js/bootstrap.min.js"></script-->
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+	<!--script src="vendor/select2/select2.min.js"></script-->
+	<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<!--script src="vendor/daterangepicker/moment.min.js"></script-->
+	<!--script src="vendor/daterangepicker/daterangepicker.js"></script-->
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/moment.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.js') }}"></script>
+<!--===============================================================================================-->
+	<!--script src="vendor/countdowntime/countdowntime.js"></script-->
+	<script src="{{ url_for('static', filename='vendor/countdowntime/countdowntime.js') }}"></script>
+<!--===============================================================================================-->
+	<!--script src="js/main.js"></script-->
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>

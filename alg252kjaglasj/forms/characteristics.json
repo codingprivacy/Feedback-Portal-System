@@ -1,0 +1,114 @@
+{
+    "course_completion":
+    {
+        "1":{
+            "1": "Does your faculty complete the course in due time?",
+            "2": "Do you think that the course taught by this faculty is completed in due time?",
+            "3": "Does * complete the course in due time?"
+            }
+    },
+    "course_completion_negate":{
+
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "punctuality":{
+        "1": {
+            "1": "Do you think the faculty is punctual in his behavior?",
+            "2": "Do you think * is punctual in his behavior?"
+        }
+        },
+    "punctuality_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "creativity":{
+        "1": {
+            "1": "Do you feel the faculty is creative and has unique way of teaching?",
+            "2": "Do you feel * is creative and has unique way of teaching?"
+        }
+        },
+    "creativity_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "solving_problems":{
+        "1": {
+            "1": "Does the faculty help in solving any of your personal problems?",
+            "2": "Does * help in solving any of your personal problems?"
+        }
+        },
+    "solving_problems_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "knowledge":{
+        "1": {
+            "1": "Does the faculty have in depth knowledge about their subject?",
+            "2": "Does * have in depth knowledge about their subject?"
+        }
+        },
+    "knowledge_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "mode_of_teaching":{
+        "1": {
+            "1": "Which mode of teaching would you prefer for this faculty for this pert subject? blackboard or projector?",
+            "2": "Which mode of teaching would you prefer for * for this subject? blackboard or projector?"
+        }
+        },
+    "mode_of_teaching_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "motivate":{
+        "1": {
+            "1": "Does your faculty encourage you to perform better?",
+            "2": "Does your faculty motivate you to perform better?",
+            "3": "Does * motivate you to perform better?",
+            "4": "Does * encourage you to perform better?",
+            "5": "Does * motivate you to perform better?",
+            "6": "Does your faculty motivate you to perform better?",
+            "7": "How much does this teacher encourage you to do your best?",
+            "8": "How much does * encourage you to do your best?"
+        }
+
+        },
+    "motivate_negate_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "interaction":{
+        "1": {
+            "1": "Does your faculty interact well in the class?",
+            "2": "What would you say about classroom interaction of this faculty?",
+            "3": "What would you say about classroom interaction of *?",
+            "4": "Does * interact well in the class?"
+        }
+        },
+    "interaction_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+    "pedagogical_effectiveness":{
+        "1": {
+            "1": "How clearly does this teacher present the information that you need to learn?",
+            "2": "How clearly does * present the information that you need to learn?"
+        }
+        },
+    "pedagogical_effectiveness_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    },
+
+    "classroom_env":{
+        "1": {
+            "1": "How often do students behave well in this class?"
+        }
+        },
+    "classroom_env_negate":{
+        "1":"What might be the reason for this?",
+        "2":"Would you like to tell me the problem?"
+    }
+}

@@ -1,0 +1,60 @@
+{% extends "header.html" %}
+
+{% block body %}
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Make your choice</strong>
+                </div>
+                <div class="card-body">
+                    <form action="{{ url_for('admin_analysis_showreport') }}" method="POST" novalidate="novalidate">
+                        <label class="form-control-label">Select Faculty</label>
+                        <select name="faculty_name" data-placeholder="Choose a Faculty..." class="standardSelect" tabindex="1">
+                            <option value="" label="default"></option>
+                            {% for name in full_name_list %}
+                            <option value="{{ name }}">{{ name }}</option>
+                            {% endfor %}
+                        </select>
+                        <hr>
+                        <label class="form-control-label">Select Semester</label>
+                        <select name="semester" data-placeholder="Choose a Semester..." multiple class="standardSelect">
+                            <option value="" label="default"></option>
+                            <option value="8">8</option>
+                            <option value="7">7</option>
+                            <option value="6">6</option>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                        <hr>
+                        
+                        <button type="submit" class="btn btn-lg btn-info btn-block">
+                            <span>Analyse</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-6 col-sm-6">
+        
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block chartscripts %}
+<script>
+    jQuery(document).ready(function() {
+        jQuery(".standardSelect").chosen({
+            disable_search_threshold: 10,
+            no_results_text: "Oops, nothing found!",
+            width: "100%"
+        });
+    });
+</script>
+{% endblock %}

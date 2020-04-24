@@ -1,0 +1,40 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Data Table</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Time Stamp</th>
+                                            <th>Email</th>
+                                            <th>Decoded Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for log in logs %}
+                                        <tr>
+                                            <td>{{ log.timestamp }}</td>
+                                            <td>{{ log.email }}</td>
+                                            <td>{{ log.decoded_code }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+{% endblock %}

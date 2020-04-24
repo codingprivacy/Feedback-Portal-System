@@ -1,0 +1,17 @@
+{
+    "interrupted":{
+        "1": ["No Problem, I will reach you later","Bye"],
+        "2": ["Never mind, I will ping you later","Bye"],
+        "3": ["Okay +, I will see you later","Bye"],
+        "4": ["No Problem, I will reach you later","Have a good day..."]
+        },
+    "good_bye":{
+        "1":"Thank you for your time +. It was nice talking with you.",
+        "2":["It was nice talking with you +","Bye"],
+        "3":["Your feedback have been taken","Bye"],
+        "4":["Your feedback have been recorded","Thanks for you time.. +"],
+        "5":["Thanks for your precious time +","Your feedback have been taken."]
+
+    }
+
+}

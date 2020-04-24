@@ -1,0 +1,80 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<div class="animate fadeIn">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Select to send email</strong>
+                </div>
+                <div class="card-body">       
+                    <form action="{{ url_for('admin_schedule_success') }}" method="POST" novalidate="novalidate">
+                        {{ form.csrf_token }}
+                        <label class="form-control-label">Select Semester Type</label><br>
+                        {{ form.semester_type(style="width: 100%") }}
+                        <br><hr>
+                        <label class="form-control-label">Select Semester</label><br>
+                        {{ form.semester_list(style="width: 100%") }}
+                        <br><hr>
+                        <label class="form-control-label">Select Class</label><br>
+                        {{ form.class_list(style="width: 100%") }}
+                        <br><hr>
+                        <button type="submit" class="btn btn-lg btn-info btn-block">
+                            <span>Send Email</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block chartscripts %}
+<script>
+
+    let semester_type_selectedval = document.getElementById('semester_type')
+    let semester_list_selectedval = document.getElementById('semester_list')
+    let class_list_selectedval = document.getElementById('class_list')
+    
+    semester_type_selectedval.onchange = function() {
+        semester_type = semester_type_selectedval.value;
+        
+        fetch('semester/' + semester_type).then(function(response) {
+           response.json().then(function(data) {
+               optionHTML = ""
+               for(let sem of data.semesters) {
+                   
+                   optionHTML += '<option value="' + sem.id + '">' + sem.name + '</option>';
+               }
+               
+               semester_list_selectedval.innerHTML = optionHTML;
+               
+           });
+            
+        });
+    }
+    
+    semester_list_selectedval.onchange = function() {
+        semester = semester_list_selectedval.value;
+        
+        fetch('class/' + semester).then(function(response) {
+           response.json().then(function(data) {
+               optionHTML = ""
+               for(let _class of data.classes) {
+                   
+                   optionHTML += '<option value="' + _class.id + '">' + _class.name + '</option>';
+               }
+               
+               class_list_selectedval.innerHTML = optionHTML;
+               
+           });
+            
+        });
+    }
+
+</script>
+{% endblock %}
