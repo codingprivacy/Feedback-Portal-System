@@ -22,7 +22,7 @@ httplib2==0.12.1
 idna==2.8
 ipaddress==1.0.17
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 keyring==10.6.0
 keyrings.alt==3.0
 kiwisolver==1.0.1
