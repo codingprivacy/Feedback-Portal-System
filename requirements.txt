@@ -48,7 +48,7 @@ python-engineio==3.5.0
 python-socketio==3.1.2
 pytz==2018.9
 pyxdg==0.25
-PyYAML==3.13
+PyYAML==5.4
 requests==2.21.0
 requests-oauthlib==1.2.0
 rsa==4.0
